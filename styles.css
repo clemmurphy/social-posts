@@ -1,0 +1,135 @@
+* {
+    margin:0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.post-feed {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #202020	;
+}
+
+.post-container {
+    background-color:white;
+    border-radius: 7px;
+    width: 300px;
+    justify-content: center;
+    margin:20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.post-author {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.post-author>*{
+    vertical-align: middle;
+    display:inline-flex;
+}
+
+.post-author-img {
+    height:50px;
+    width:50px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.post-author-img:hover {
+    cursor: pointer;
+}
+
+.post-author-img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-author-name {
+    height: 100%;
+    color:steelblue;
+}
+
+.post-author-name:hover {
+    color:rgb(51, 98, 136);
+    transition: 0.5s;
+}
+
+.name-timestamp {
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.name-timestamp>* {
+    display: flex;
+    margin-left: 0.5rem;
+}
+
+.post-timestamp {
+    font-size: 14px;
+    font-weight: normal;
+    color: gray;
+}
+
+.post-timestamp>i::before{
+    padding-left: 0.2rem;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.post-content-text {
+    background-color: white;
+    width: 100%;
+}
+
+.post-content-text>p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 15px;
+}
+
+.post-content>img{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.post-engagement {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.engagement-button {
+    text-align: center;
+    flex-grow: 1;
+    vertical-align: middle;
+    font-size: 0.8rem;
+    color:steelblue;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+}
+
+.engagement-button:hover {
+    color:rgb(51, 98, 136);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.engagement-button>i{
+    padding-right: 0.5rem;
+}
